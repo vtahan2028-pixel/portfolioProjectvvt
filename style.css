@@ -158,7 +158,21 @@ footer p {
   h2 {
     font-size: 28px;
   }
+.document-frame {
+  width: 850px;
+  max-width: 100%;
+  height: 700px;
+  border: 4px solid #90CCE8;
+  border-radius: 18px;
+}
 
+.app-frame {
+  width: 430px;
+  max-width: 100%;
+  height: 680px;
+  border: 4px solid #90CCE8;
+  border-radius: 18px;
+}
   .document-frame {
     height: 600px;
   }
