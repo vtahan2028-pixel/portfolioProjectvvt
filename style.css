@@ -1,0 +1,166 @@
+/* ---------- GENERAL ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FFF5F8;
+  color: #3E5067;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background: linear-gradient(to right, #F7BFD2, #BFE3F5);
+  text-align: center;
+  padding: 30px;
+  border-bottom: 5px solid #90CCE8;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #C85F88;
+  text-align: center;
+  font-size: 32px;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #3E5067;
+  background-color: white;
+  padding: 12px 20px;
+  border: 2px solid #90CCE8;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #76BDE0;
+  color: white;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+main {
+  width: 90%;
+  max-width: 950px;
+  margin: 40px auto;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border: 3px solid #F3B5CB;
+  border-radius: 22px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+/* ---------- ABOUT ME ---------- */
+
+.about-layout {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-layout div {
+  flex: 1;
+}
+
+.profile-photo {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+  border: 6px solid #BFE3F5;
+  box-shadow: 0 6px 15px rgba(0,0,0,.15);
+}
+
+/* ---------- TEXT ---------- */
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ---------- EMBEDS ---------- */
+
+.embed-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.document-frame {
+  width: 850px;
+  max-width: 100%;
+  height: 700px;
+  border: 4px solid #90CCE8;
+  border-radius: 18px;
+}
+
+.app-frame {
+  width: 430px;
+  max-width: 100%;
+  height: 680px;
+  border: 4px solid #90CCE8;
+  border-radius: 18px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background-color: #76BDE0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+  .about-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 220px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .document-frame {
+    height: 600px;
+  }
+
+}
